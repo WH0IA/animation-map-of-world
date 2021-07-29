@@ -1,0 +1,595 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  background-color: #23272A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.shell {
+  width: 1096px;
+  height: 636px;
+  position: relative;
+}
+
+.map {
+  width: 1096px;
+  height: 636px;
+}
+
+.materik {
+  fill: none;
+  stroke: #61E323;
+  stroke-width: 0.7px;
+}
+
+.city {
+  fill: #61E323;
+  stroke: none;
+  stroke-width: 3px;
+  opacity: 1;
+  -webkit-filter: drop-shadow(0 0 3px #61E323);
+  filter: drop-shadow(0 0 3px #61E323);
+}
+
+.pick {
+  fill: #61E323;
+  stroke: #61E323;
+  -webkit-animation: pick 0.5s ease infinite;
+  animation: pick 0.5s ease infinite;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: yellow;
+  position: absolute;
+  -webkit-box-shadow: 0 0 2px yellow , 0 0 4px yellow , 0 0 6px yellow;
+  box-shadow: 0 0 2px yellow , 0 0 4px yellow , 0 0 6px yellow;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  -webkit-animation: run 5s linear infinite;
+  animation: run 5s linear infinite;
+  opacity: 0;
+}
+
+#dot1 {
+  offset-path: path("M 726.37544,262.51339 C 854.67862,648.28129 451.97229,825.71262 332.00265,60.471911");
+  -webkit-animation-name: runmat;
+  animation-name: runmat;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+#dot22 {
+  offset-path: path("M 332.00265,60.471911 C 379.22526,282.15071 -46.159818,388.36776 254.04529,612.72705");
+  -webkit-animation-name: runmat;
+  animation-name: runmat;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+#dot23 {
+  offset-path: path("M 1039.2702,558.17241 C 781.57362,700.05253 939.66656,409.693 726.37544,262.51339");
+  -webkit-animation-name: runmat;
+  animation-name: runmat;
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+#dot28 {
+  offset-path: path("m 254.04529,612.72705 22.93977,1.47784 c 276.48919,-86.09411 1.54706,-385.89283 198.01392,-421.87185");
+  -webkit-animation-name: runmat;
+  animation-name: runmat;
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+#dot30 {
+  offset-path: path("M 474.99898,192.33304 C 326.80055,74.521437 219.60165,749.09306 1039.2702,558.17241");
+  -webkit-animation-name: runmat;
+  animation-name: runmat;
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+#dot2 {
+  offset-path: path("m 209.63596,440.85208 91.73889,-17.3175");
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+#dot3 {
+  offset-path: path("m 301.37485,423.53458 -4.92033,131.8536 -42.40923,57.33887");
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+#dot4 {
+  offset-path: path("m 160.30985,189.12294 4.38718,-77.13133");
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+#dot5 {
+  offset-path: path("M 332.00265,60.471911 274.55434,81.044219 164.57846,112.40661");
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+#dot6 {
+  offset-path: path("m 497.75,119.25 15.03125,4.21875 6.23513,41.64068 -44.0174,27.22361");
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+#dot7 {
+  offset-path: path("m 497.80317,119.32427 14.97808,4.14448 10.96875,9.03125 19,-14.25 65.18505,9.206 24.00245,-27.831 18.55654,17.79892");
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+}
+
+#dot8 {
+  offset-path: path("m 648.25,252.25 51.43216,3.89943 26.69328,6.36396");
+  -webkit-animation-duration: 3.5s;
+  animation-duration: 3.5s;
+}
+
+#dot9 {
+  offset-path: path("m 589.15253,361.72931 121.13623,-63.06508 16.08668,-36.15084");
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+#dot10 {
+  offset-path: path("M 589.15253,361.72931 617.39261,303.79075 633.56767,237.14594 648.25,252.25");
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+}
+
+#dot11 {
+  offset-path: path("M 1079.0228,466.42531 1054.4375,497.25");
+  -webkit-animation-duration: 3.5s;
+  animation-duration: 3.5s;
+}
+
+#dot12 {
+  offset-path: path("m 1054.4062,497.28125 12.0876,42.77155 -27.2236,18.11961");
+  -webkit-animation-duration: 3.5s;
+  animation-duration: 3.5s;
+}
+
+#dot13 {
+  offset-path: path("M 909.95804,363.98321 896.08107,311.21537 919,292 866.38258,288.32279");
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
+
+#dot14 {
+  offset-path: path("m 960.75,260.25 -94.36742,28.07279");
+  -webkit-animation-duration: 3.5s;
+  animation-duration: 3.5s;
+}
+
+#dot15 {
+  offset-path: path("m 966.5,221.75 -5.75,38.5");
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
+
+#dot16 {
+  offset-path: path("M 900.94243,214.60691 966.5,221.75");
+  -webkit-animation-duration: 4.5s;
+  animation-duration: 4.5s;
+}
+
+#dot17 {
+  offset-path: path("m 834.73955,213.50205 66.20288,1.10486");
+  -webkit-animation-duration: 6.5s;
+  animation-duration: 6.5s;
+}
+
+#dot18 {
+  offset-path: path("M 866.38258,288.32279 834.73955,213.50205");
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
+
+#dot19 {
+  offset-path: path("m 911.15625,157.125 -10.21382,57.48191");
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+#dot20 {
+  offset-path: path("M 938.25,185.25 911.23967,157.15448");
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
+
+#dot21 {
+  offset-path: path("M 900.94243,214.60691 938.25,185.25");
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+#dot24 {
+  offset-path: path("M 834.73955,213.50205 769.25,161.8125 650.25,117.75");
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
+
+#dot25 {
+  offset-path: path("M 909.95804,363.98321 880.5,347.75 l -53.875,-4 -18,-12.0625 -20.375,-41.0625 -61.87456,-28.11161");
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+#dot26 {
+  offset-path: path("m 650.25,117.75 23.07033,41.34903 -7.30471,57.68222 -17.70919,35.36862");
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
+
+#dot27 {
+  offset-path: path("M 650.25,117.75 583.125,148.375 519.01638,165.10943 505,192 l -30.00102,0.33304");
+  -webkit-animation-duration: 4.5s;
+  animation-duration: 4.5s;
+}
+
+#dot29 {
+  offset-path: path("m 160.42842,189.00437 66.51911,-37.58745 83.00066,-60.116191 22.05446,-30.828818");
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+}
+
+#dot31 {
+  offset-path: path("m 578.85529,539.61086 19.35565,-42.5093 15.99969,-40.37687 -22.92938,-25.25594 -2.12872,-69.73944");
+  -webkit-animation-duration: 6.5s;
+  animation-duration: 6.5s;
+}
+
+#dot32 {
+  offset-path: path("m 1030.7849,163.87752 -1.4099,43.34123 -31.27344,19.23047 L 960.75,260.25");
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+}
+
+#dot33 {
+  offset-path: path("m 1075.5,57.25 -20.25,9.5 L 1022.5,81 1004.75,79.5 690.97591,103.54695 650.3125,117.5");
+  -webkit-animation-duration: 9s;
+  animation-duration: 9s;
+}
+
+#dot34 {
+  offset-path: path("m 834.47439,213.45786 20.11936,-48.39536 -32.14018,-28.59089 0.7734,-48.945049");
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+#dot35 {
+  offset-path: path("m 209.63596,440.85208 21.81731,17.31157 31.23423,29.39885 11.60364,36.51411 -36.51146,30.79854 16.26561,57.8519");
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
+
+#dot36 {
+  offset-path: path("m 45.057503,88.692137 32.014541,6.640053 46.480376,13.99154 41.03204,2.94249");
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+#dot37 {
+  offset-path: path("m 81.814939,261.8078 4.268606,-25.61163 26.263785,-46.3618 10.61222,-39.12888 41.73748,-38.71388");
+  -webkit-animation-duration: 5.5s;
+  animation-duration: 5.5s;
+}
+
+#dot38 {
+  offset-path: path("M 441.32302,276.47875 532.125,296.0625 552.51556,252.08357 648.25,252.25");
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+}
+
+@-webkit-keyframes run {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  48% {
+    opacity: 1;
+  }
+
+  50% {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  98% {
+    opacity: 1;
+  }
+
+  100% {
+    offset-distance: 0%;
+    opacity: 0;
+  }
+}
+
+@keyframes run {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  48% {
+    opacity: 1;
+  }
+
+  50% {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  98% {
+    opacity: 1;
+  }
+
+  100% {
+    offset-distance: 0%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes runmat {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    offset-distance: 100%;
+  }
+}
+
+@keyframes runmat {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    offset-distance: 100%;
+  }
+}
+
+@-webkit-keyframes runmat2 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    offset-distance: 100%;
+  }
+}
+
+@keyframes runmat2 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    offset-distance: 100%;
+  }
+}
+
+@-webkit-keyframes pick {
+  0% {
+    -webkit-filter: drop-shadow(0 0 2px #61E323);
+    filter: drop-shadow(0 0 2px #61E323);
+  }
+
+  50% {
+    -webkit-filter: drop-shadow(0 0 2px #61E323) drop-shadow(0 0 2px #61E323);
+    filter: drop-shadow(0 0 2px #61E323) drop-shadow(0 0 2px #61E323);
+  }
+
+  100% {
+    -webkit-filter: drop-shadow(0 0 2px #61E323);
+    filter: drop-shadow(0 0 2px #61E323);
+  }
+}
+
+@keyframes pick {
+  0% {
+    -webkit-filter: drop-shadow(0 0 2px #61E323);
+    filter: drop-shadow(0 0 2px #61E323);
+  }
+
+  50% {
+    -webkit-filter: drop-shadow(0 0 2px #61E323) drop-shadow(0 0 2px #61E323);
+    filter: drop-shadow(0 0 2px #61E323) drop-shadow(0 0 2px #61E323);
+  }
+
+  100% {
+    -webkit-filter: drop-shadow(0 0 2px #61E323);
+    filter: drop-shadow(0 0 2px #61E323);
+  }
+}
+
+@media (max-width: 1096px) {
+  .dot {
+    display: none;
+  }
+
+  .shell {
+    width: 100%;
+    height: 100%;
+  }
+
+  .map {
+    width: 100%;
+    height: 100%;
+  }
+}
